@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'GIBold';
+  src: url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.eot?') format('eot'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.woff2') format('woff2'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.woff') format('woff'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.otf')  format('opentype'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.ttf')  format('truetype'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.svg#GlacialIndifference-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+      }
+
+@font-face {
+    font-family: 'GIRegular';
+  src: url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.eot?') format('eot'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.woff2') format('woff2'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.woff') format('woff'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.otf')  format('opentype'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.ttf')  format('truetype'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.svg#GlacialIndifference-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+      }
+
+@font-face {
+  font-family: 'GlacialIndifferenceRegular';
+  src: url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.eot?') format('eot'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.woff2') format('woff2'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.woff') format('woff'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.otf')  format('opentype'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.ttf')  format('truetype'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/6eba446e7f2b7c1548c265408f3b7e74/GlacialIndifference-Regular.svg#GlacialIndifference-Regular') format('svg');
+ font-weight: normal;
+ font-style: normal;
+}
+
+@font-face {
+  font-family: 'GlacialIndifferenceBold';
+  src: url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.eot?') format('eot'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.woff2') format('woff2'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.woff') format('woff'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.otf')  format('opentype'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.ttf')  format('truetype'),
+       url('/assets/fonts/glacial-indifference/5ecc52cca5abe351d0c6005f04f4fa77/bc97e37a42957399d4806a9023f2ad33/GlacialIndifference-Bold.svg#GlacialIndifference-Bold') format('svg');
+ font-weight: bold;
+ font-style: normal;
+}
+
