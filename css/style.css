@@ -1,32 +1,47 @@
-#construction {
-	position:fixed;
-	display:block;
-	text-align: center;
-	top:0px;
-	height:100%;
-	width:100%;
-	z-index:1;
-	background-color: #fff;
-	color:#000;
-	font-size: 1em;
+header, footer, #nav, .h3 {
+	font-family: 'Barlow'; 
+	font-style: normal;
+	font-size: .75em;
+	font-weight: 300;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 }
-#enter {
-	margin:auto;
-	position:relative;
-	top:50%;
-	transform: translateY(-50%);
-		-webkit-transform: translateY(-50%);
-		-moz-transform: translateY(-50%);
-		-o-transform: translateY(-50%);
-		-ms-transform: translateY(-50%);
-	width:30%;
-	height:auto;
-	clear:both;
+#nav, footer {
+	margin-top: 20px;
+	position: relative;
+	clear: both;
+}
+.h1 {
+	font-size: 1.5em;
+	font-weight: 500;
+	letter-spacing: 5px;
+	text-align: left;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	float:right;
+}
+.h2 {
+	font-family: 'Barlow';
+	font-style: normal;
+	font-size: 1em;
+	font-weight: 500;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+.h4 {
+	text-align: left;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	float:right;
 }
 body {
-	font-family: 'DidactGothicMedium'; 
-	font-weight: normal; 
+	font-family: 'Cutive Mono'; 
 	font-style: normal;
+	font-weight: 400;
+	font-size: .95em;
+	position: relative;
 }
 a {
 	text-decoration:none;
