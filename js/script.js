@@ -178,7 +178,7 @@ function navClick(navFilter) {
   $("#content").empty().show();
   $("#aboutcontent, #projectcontent").hide();
   for (var i = 0; i < navFilter.length; i++) {
-    var templateString = "<div class='box' id='b" + (i + 1) +"'><img class='img link' data-projectname='" + navFilter[i].projNum + "' src='" + navFilter[i].imgSrc + "'></img><div class='tag'>" + navFilter[i].tagDescr + "</div></div>";
+    var templateString = "<div class='box' id='b" + (i + 1) +"'><img class='img link' data-projectname=" + navFilter[i].projNum + " src=" + navFilter[i].imgSrc + "></img><div class='tag'>" + navFilter[i].tagDescr + "</div></div>";
   $("#content").append(templateString)
   };
 };
