@@ -18,6 +18,15 @@ header {
 	position: relative;
 	clear: both;
 }
+#outercontainer {
+	position:relative;
+	margin:auto;
+	margin-top:30px;
+	/*width:80%;
+	text-align:center;*/
+	min-width: 630px;
+	clear:both;
+}
 .h1 {
 	font-size: 1.5em;
 	font-weight: 500;
@@ -52,6 +61,7 @@ body {
 	font-weight: 400;
 	font-size: .95em;
 	position: relative;
+	width: 100%;
 }
 a {
 	text-decoration:none;
@@ -62,14 +72,6 @@ a:hover, #nav span:hover {
 }
 .link:hover {
 	cursor:pointer;
-}
-#outercontainer {
-	position:relative;
-	margin:auto;
-	margin-top:30px;
-	width:80%;
-	text-align:center;
-	clear:both;
 }
 /*header {
 	height:110px;
@@ -88,7 +90,7 @@ a:hover, #nav span:hover {
 	position:relative;
 	float:left;*/
 }
-#title {
+/*#title {
 	position:relative;
 	vertical-align:bottom;
 	float:right;
@@ -96,10 +98,33 @@ a:hover, #nav span:hover {
 }
 #title:hover {
 	color:#000;
-}
-#nav {
+}*/
+/*#nav {
 	margin: 5px 0px 25px 0px;
+}*/
+/*ul {
+	position:relative;
+	margin:0px;
+	padding:0px;
+	width:100%;
+	display: inline;
 }
+li {
+	list-style: none;
+	display: inline;
+}
+ul li:hover ul {
+	display: inline-block;
+}
+ul ul {
+	position: absolute;
+	top:1.25em;
+	left:0px;
+	display: none;
+}
+ul ul a {
+	color:#555;
+}*/
 ul {
 	position:relative;
 	margin:0px;
@@ -123,6 +148,16 @@ ul ul {
 ul ul a {
 	color:#555;
 }
+a {
+	text-decoration:none;
+	color:#000000;
+}
+a:hover, #nav span:hover {
+	color:#aaa;
+}
+a:hover, .link:hover {
+	cursor:pointer;
+}
 #sidebar {
 	margin-top:30px;
 	float:left;
@@ -135,7 +170,7 @@ ul ul a {
 	float:left;
 	text-align:left;
 }
-.subtitle1 {
+/*.subtitle1 {
 	display:block;
 	font-family: 'GlacialIndifferenceRegular'; 
 	font-weight: regular; 
@@ -151,7 +186,7 @@ ul ul a {
 .quote {
 	font-style:italic;
 	color:#aaa;
-}
+}*/
 #content {
 	margin:auto;
 }
