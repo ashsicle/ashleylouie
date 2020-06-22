@@ -202,13 +202,6 @@ a:hover, .link:hover {
 	#b1, #b6, #b11, #b16 {
 		margin-left:0px;
 	}
-	#aboutdescr {
-		width:1140px;
-		margin-left:180px;
-	}
-	#sidebar {
-		width:300px;
-	}
 	.img {
 		opacity:.7;
 		filter: grayscale(70%);
