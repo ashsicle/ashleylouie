@@ -73,58 +73,9 @@ a:hover, #nav span:hover {
 .link:hover {
 	cursor:pointer;
 }
-/*header {
-	height:110px;
-	margin:auto;
-	border-bottom: solid 5px #000;
-	font-family: 'GlacialIndifferenceRegular'; 
-	font-weight: normal; 
-	font-style: normal;
-	font-size: 2em;
-	text-align: right;
-}*/
 #AL {
 	height: 50px;
-	/*height: 100px;
-	margin: 0px 100px 0px 30px;
-	position:relative;
-	float:left;*/
 }
-/*#title {
-	position:relative;
-	vertical-align:bottom;
-	float:right;
-	margin-top:70px;
-}
-#title:hover {
-	color:#000;
-}*/
-/*#nav {
-	margin: 5px 0px 25px 0px;
-}*/
-/*ul {
-	position:relative;
-	margin:0px;
-	padding:0px;
-	width:100%;
-	display: inline;
-}
-li {
-	list-style: none;
-	display: inline;
-}
-ul li:hover ul {
-	display: inline-block;
-}
-ul ul {
-	position: absolute;
-	top:1.25em;
-	left:0px;
-	display: none;
-}
-ul ul a {
-	color:#555;
-}*/
 ul {
 	position:relative;
 	margin:0px;
@@ -170,23 +121,6 @@ a:hover, .link:hover {
 	float:left;
 	text-align:left;
 }
-/*.subtitle1 {
-	display:block;
-	font-family: 'GlacialIndifferenceRegular'; 
-	font-weight: regular; 
-	font-style: normal;
-	border-bottom: solid 1px #000000;
-	margin-bottom: 2px;
-}
-.subtitle2 {
-	font-family: 'GlacialIndifferenceRegular'; 
-	font-weight: bold; 
-	font-style: normal;
-}
-.quote {
-	font-style:italic;
-	color:#aaa;
-}*/
 #content {
 	margin:auto;
 }

@@ -183,15 +183,13 @@ function navClick(navFilter) {
   };
 };
 
-  $("#construction").on("click", function(){
-    $(this).fadeOut(2000);
-    navClick(navHome);
-  });
-
   $("#aboutcontent").hide();
   $("#about").on("click", function(){
     $("#aboutcontent").show();
     $("#content, #projectcontent").hide();
+  });
+  $("#aboutclose").on("click", function(){
+    $("#aboutcontent").hide();
   });
   $(".home").on("click", function(){
     navClick(navHome);
@@ -246,7 +244,7 @@ function projClick(projectName) {
     $(".dot:first").css("background-color", "#000");
     $(".dot:first").addClass("currentexhibit");
   };
-  var projectCapt = "<span class='subtitle2'>" + project.projectTitle.toUpperCase() + "</span><br/>" + project.projectDescr;
+  var projectCapt = "<span class='h2'>" + project.projectTitle.toUpperCase() + "</span><br/>" + project.projectDescr;
   $("#projectcaption").append(projectCapt)
 };
 
