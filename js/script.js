@@ -248,6 +248,8 @@ function projClick(projectName) {
   $("#projectcaption").append(projectCapt)
 };
 
+navClick(navHome);
+
   $("#content").on("click", ".img", function(){
     var projectName = $(this).data("projectname");
     projClick(projectName);
