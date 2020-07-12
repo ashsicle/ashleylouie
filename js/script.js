@@ -182,6 +182,7 @@ function navClick(navFilter) {
   $("#content").append(templateString)
   };
 };
+navClick(navHome);
 
   $("#aboutcontent").hide();
   $("#about").on("click", function(){
