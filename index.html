@@ -1,62 +1,43 @@
+<!DOCTYPE html>
+<html>
 <head>
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
-  <script src="js/jquery-3.5.1.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
-  <title>Ashley Louie</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<title>Ashley Louie</title>
 </head>
 <div id="outercontainer">
-  <header>
-    <img id="AL" class="home link" src="images/AL.svg" alt="AL"/>
-    <span id="title" class="h1 home link">ASHLEY LOUIE</span>
-  </header>
-  <div id="nav" class="link">
-    <ul>
-    <li><span id="about">ABOUT</span></li> | 
-    <li><span id="arch">ARCHITECTURE</span> | 
-      <ul id="archnav">
-      <li><span id="archchron">CHRONOLOGICAL</span></li> | 
-      <li><span id="archmod">MODEL</span></li>
-      </ul>
-    </li>
-    <li><span id="art">ARTIFACT</span> |
-      <ul id="artnav">
-      <li><span id="art2d">2D</span></li> | 
-      <li><span id="art3d">3D</span></li> | 
-      <li><span id="artdigit">DIGITAL</span></li> | 
-      <li><span id="artphys">PHYSICAL</span></li>
-      </ul>
-    </li>
-    <li><a id="all">ALL</a></li>
-    </ul>
+	<header>
+		<a href="./index.html"><img id="AL" src="images/AL.svg"></a>
+		<span class="h1"><a href="./index.html">Ashley Louie</a></span>
+	</header>
+	<div id="nav">
+    	<ul>
+    	<li><span id="about" class="link">about</span></li> | 
+    	<li><span class="sort-sd link">spatial data</span></li> | 
+    	<li><span class="sort-uf link">urban fabric</span></li> |
+    	<li><span class="sort-sa link">social advocacy</span></li> | 
+    	<li><span class="sort-gd link">graphic design</span></li> | 
+    	<li><span class="sort-all link">all</span></li>
+    	</ul>
   </div><!-- close nav -->
-
-  <div id="content">
-  </div><!-- close content -->
-
-  <div id="aboutcontent">
-      <span class="h2">ABOUT</span><br/>
-      My name is Ashley Louie. I am a designer and spatial thinker with a passion for public and private spaces that connect people and serve communities. For me, the intersection of data visualization, cartography, and urban design provides an opportunity to understand invisible spatial relationships and to draw visible insights that can impact people and our environments.<br/><br/>
-      With a background in architecture and urban design, I have developed a multi-scalar approach to understanding systems and spaces within the public realm. My work includes projects focus on illustrating spatial data, connecting urban fabric, and supporting social advocacy.<br/><br/>
-      <br/><span class="h2">Connect</span><br/><br/>
-      Find me on <a href="https://www.linkedin.com/in/ashleyclouie" class="link" target="_blank"><span class="h3">LinkedIn</span></a>, <a href="https://instagram.com/ashsicle/" class="link" target="_blank"><span class="h3">Instagram</span></a>, or email me  <a href="mailto:ashleylouie27@gmail.com" class="link" target="_blank"><span class="h3">here</span></a>.<br/><br/>
-      <span id="aboutclose" class="h3 link">[x] close</span>
-  </div><!-- close aboutcontent -->
-
-  <div id="projectcontent">
-    <div id="exhibitbox">
-    </div><!-- close exhibitbox -->
-    <img src="images/left.png" id="left" class="link"/>
-    <img src="images/right.png" id="right" class="link"/>
-    <div id="dotbox">
-    </div><!-- close dotbox -->
-    <div id="projectcaption">
-    </div><!-- close projectdescription -->
-  </div><!-- close projectcontent -->
-
-  <footer>
-    &copy; Ashley Louie 2020 | All Rights Reserved
-    <span class="h4"><a href="mailto:ashleylouie27@gmail.com" class="link" target="_blank">Email</a> | <a href="https://www.linkedin.com/in/ashleyclouie" class="link" target="_blank">LinkedIn</a> | <a href="https://instagram.com/ashsicle/" class="link" target="_blank">Instagram</a></span>
-  </footer>
+	<body>
+		<div id="aboutcontent">
+			<br/><span class="h2">About</span><br/>
+			<p>My name is Ashley Louie. I am a designer and spatial thinker with a passion for public and private spaces that connect people and serve communities. For me, the intersection of data visualization, cartography, and urban design provides an opportunity to understand invisible spatial relationships and to draw visible insights that can impact people and our environments.</p>
+			<p>With a background in architecture and urban design, I have developed a multi-scalar approach to understanding systems and spaces within the public realm. My work includes projects focus on illustrating <span class="h3 link sort-sd">spatial data</span>, connecting <span class="h3 link sort-uf">urban fabric</span>, and supporting <span class="h3 link sort-sa">social advocacy</span>. I also love typography and occasionally freelance <span class="h3 link sort-gd">graphic design</span>.</p>
+			<br/><span class="h2">Connect</span><br/><br/>
+			Find me on <a href="https://www.linkedin.com/in/ashleyclouie" class="link" target="_blank"><span class="h3">LinkedIn</span></a>, <a href="https://instagram.com/ashsicle/" class="link" target="_blank"><span class="h3">Instagram</span></a>, or email me  <a href="mailto:ashleylouie27@gmail.com" class="link" target="_blank"><span class="h3">here</span></a>.<br/><br/>
+			<span id="aboutclose" class="h3 link">[x] close</span>
+		</div><!-- close about-content -->
+		<div id="content">
+		</div><!-- close content -->
+	</body>
+	<footer>
+		&copy; Ashley Louie 2020 | All Rights Reserved
+		<span class="h4"><a href="mailto:ashleylouie27@gmail.com" class="link" target="_blank">Email</a> | <a href="https://www.linkedin.com/in/ashleyclouie" class="link" target="_blank">LinkedIn</a> | <a href="https://instagram.com/ashsicle/" class="link" target="_blank">Instagram</a></span>
+	</footer>
 </div><!-- close outercontainer -->
+</html>
