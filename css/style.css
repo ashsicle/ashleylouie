@@ -27,6 +27,7 @@ header {
 /*	width:80%;*/
 	min-width: 630px;
 	clear: both;
+	overflow: auto hidden;
 /*	border: solid 1px #eee;*/
 }
 .h1 {

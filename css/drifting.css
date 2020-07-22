@@ -29,7 +29,7 @@ p[class^="col-"] {
 	height: 30px;
 }
 #drifting {
-	overflow: auto;
+	overflow: auto hidden;
 }
 .drift-title {
 	font-family: 'Roboto'; 
