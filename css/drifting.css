@@ -90,7 +90,7 @@ p[class^="col-"] {
 	letter-spacing: 1px;
 	position: relative;
 }
-[class^="col-"] img {
+[class^="col-"] > img {
 	background-blend-mode: multiply;
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
@@ -99,7 +99,7 @@ p[class^="col-"] {
 	vertical-align: middle;
 	transition: 3s;
 }
-[class^="col-"] img:hover {
+[class^="col-"] > img:hover {
 	filter: grayscale(0%);
 	-webkit-filter: grayscale(0%);
 	transition: 0.5s;
