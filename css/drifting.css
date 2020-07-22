@@ -112,6 +112,7 @@ p[class^="col-"] {
 	display: -webkit-flex;
 	display: -webkit-inline-box;
 	display: flex;
+	flex-basis: auto;
 	height: auto;
 }
 [class^="col-"]:last-child {
