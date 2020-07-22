@@ -25,7 +25,7 @@ var denguevulnerability = {
 };
 var drifting = {
   projID: "drifting",
-  imgSrc: "drifting_thumb.jpg",
+  imgSrc: "drifting_thumb.png",
   projTitle: "Drifting",
   projDescr: "a 72-hour derive of New York City",
   location: "New York City, NY"
@@ -83,13 +83,13 @@ var dxd2019 = {
   projTitle: "Data Through Design 2019",
   projDescr: "event identity graphics, artist display tags, and promotion material",
   location: "Brooklyn, NY"
-}
+};
 var magicgrants2019 = {
   projID: "magicgrants2019",
   imgSrc: "magicgrants2019_thumb.png",
   projTitle: "2019-20 Magic Grant Posters",
   projDescr: "patent inspired digital poster design"
-}
+};
 var collagescape = {
   projID: "collagescape",
   imgSrc: "collagescape_01_thumb.jpg",
@@ -108,7 +108,7 @@ var thecave = {
   imgSrc: "thecave.jpg",
   projTitle: "The Allegory of The Cave",
   projDescr: "typesetting and printed booklet of Plato's Republic"
-}
+};
 
 allProjects = {
   nycorganicwaste:nycorganicwaste, popsindexindex:popsindex, /*denguevulnerability:denguevulnerability,*/ drifting:drifting, pedestrianspectrum:pedestrianspectrum, agrotech:agrotech, lifeaquatic:lifeaquatic, amplifyhudson:amplifyhudson, playlab:playlab, conflictresolution:conflictresolution, dxd2019:dxd2019, magicgrants2019:magicgrants2019, collagescape:collagescape, lines:lines

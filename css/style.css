@@ -178,14 +178,29 @@ a:hover, .link:hover {
 	margin-bottom: 20px;
 	float: left;
 }
-.img-1-1 {
-	flex: 1;
+.img-16-9 {
+	flex: 1.7778;
+}
+.img-3-2 {
+	flex: 1.5;
 }
 .img-4-3 {
 	flex: 1.3333;
 }
+.img-5-4 {
+	flex: 1.25;
+}
+.img-1-1 {
+	flex: 1;
+}
 .img-3-4 {
 	flex: 0.75;
+}
+.img-5-7 {
+	flex: 0.7143;
+}
+.img-2-3 {
+	flex: 0.6667;
 }
 .img-9-16 {
 	flex: 0.5625;
@@ -196,26 +211,9 @@ a:hover, .link:hover {
     -webkit-box-sizing: border-box;
 	border: solid 1px #ccc;
 }
-@media screen and (min-width:1921px) {
-	#outercontainer  {
-		width:1620px;
-	}
-	.thumb {
-		max-width: 1620px;
-		max-height: 901px;
-	}
-	.img-grid {
-		width: 1640px;
-	}
-	.img-grid img {
-		max-width: 390px;
-	}
-	p {
-	width: 65%;
-	}
-}
 
-@media screen and (min-width:1491px) and (max-width:1920px) {
+/*XXL screen*/
+@media screen and (min-width:1441px) {
 	#outercontainer {
 		width: 1290px;
 	}
@@ -233,8 +231,8 @@ a:hover, .link:hover {
 	width: 70%;
 	}
 }
-
-@media screen and (min-width:1161px) and (max-width:1490px) {
+/*XL screen*/
+@media screen and (min-width:1025px) and (max-width:1440px) {
 	#outercontainer {
 		width: 960px;
 	}
@@ -252,19 +250,70 @@ a:hover, .link:hover {
 	width: 80%;
 	}
 }
-
-@media screen and (min-width:731px) and (max-width:1160px) {
+/*L tablet (landscape)*/
+@media screen and (min-width:801px) and (max-width:1024px) {
 	#outercontainer {
-		width:630px;
+		width: 800px;
 	}
 	.thumb {
-		max-width: 630px;
-		max-height: 354px;
+		max-width: 800px;
+		max-height: 450px;
 	}
 	.img-grid {
-		width: 650px;
+		width: 820px;
 	}
 	.img-grid img {
-		max-width: 305px;
+		max-width: 390px;
+	}
+	p {
+	width: 80%;
+	}
+}
+/*M tablet (portrait)*/
+@media screen and (min-width:601px) and (max-width:800px) {
+	#outercontainer {
+		width:600px;
+	}
+	.thumb {
+		max-width: 600px;
+		max-height: 338px;
+	}
+	.img-grid {
+		width: 620px;
+	}
+	.img-grid img {
+		max-width: 290px;
+	}
+}
+/*S phone (landscape)*/
+@media screen and (min-width:415px) and (max-width:600px) {
+	#outercontainer {
+		width: 400px;
+	}
+	.thumb {
+		max-width: 400px;
+		max-height: 225px;
+	}
+	.img-grid {
+		width: 420px;
+	}
+	.img-grid img {
+		max-width: 190px;
+	}
+}
+/*XS phone (portrait)*/
+@media screen and (max-width:414px) {
+	#outercontainer {
+		width: 98%;
+	}
+	.thumb {
+		max-width: 480px;
+		max-height: 270px;
+	}
+	.img-grid {
+		width: 98%;
+	}
+	.img-grid img {
+		max-width: 45%;
 	}
 }
