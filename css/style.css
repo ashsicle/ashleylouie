@@ -150,10 +150,11 @@ a:hover, .link:hover {
 }
 .img-row {
 	position: relative;
-	display: flex;
 	display: -webkit-box;
+	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
+	display: flex;
 	margin-bottom: 20px;
 	height: auto;
 	width: 100%;

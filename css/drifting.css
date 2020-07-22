@@ -19,6 +19,8 @@ p[class^="col-"] {
 	font-size: 0.8em;
 	font-weight: 300;
 	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl;
 	position: fixed;
 	display: block;
 	margin: auto;
@@ -38,6 +40,8 @@ p[class^="col-"] {
 	float: right;
 	clear: right;
 	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl;
 	display: block;
 	height: auto;
 }
@@ -76,6 +80,8 @@ p[class^="col-"] {
 	float: left;
 	margin-left: 5px;
 	writing-mode: vertical-rl;
+	-webkit-writing-mode: vertical-rl;
+	-ms-writing-mode: vertical-rl;
 }
 .drift-data {
 	font-family: 'Roboto'; 
@@ -101,10 +107,11 @@ p[class^="col-"] {
 }
 [class^="col-"] {
 	position: relative;
-	display: flex;
 	display: -webkit-box;
+	display: -moz-box;
 	display: -ms-flexbox;
 	display: -webkit-flex;
+	display: flex;
 	height: auto;
 }
 [class^="col-"]:last-child {
