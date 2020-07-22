@@ -22,7 +22,6 @@ p[class^="col-"] {
 	-webkit-writing-mode: vertical-rl;
 	-ms-writing-mode: vertical-rl;
 	position: fixed;
-	display: flex;
 	margin: auto;
 	margin-left: -30px;
 	top: 85%;
@@ -110,8 +109,9 @@ p[class^="col-"] {
 	display: -webkit-box;
 	display: -moz-box;
 	display: -ms-flexbox;
-	display: -webkit-flex;*/
-	display: block;
+	display: -webkit-flex;
+	display: -webkit-inline-box;
+	display: flex;
 	height: auto;
 }
 [class^="col-"]:last-child {
