@@ -102,6 +102,9 @@ p[class^="col-"] {
 [class^="col-"] {
 	position: relative;
 	display: flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	height: auto;
 }
 [class^="col-"]:last-child {
