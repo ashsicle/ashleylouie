@@ -22,7 +22,7 @@ p[class^="col-"] {
 	-webkit-writing-mode: vertical-rl;
 	-ms-writing-mode: vertical-rl;
 	position: fixed;
-	display: block;
+	display: flex;
 	margin: auto;
 	margin-left: -30px;
 	top: 85%;
