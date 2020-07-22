@@ -90,6 +90,9 @@ p[class^="col-"] {
 	letter-spacing: 1px;
 	position: relative;
 }
+.drift-img > div {
+	align-items: center;
+}
 [class^="col-"] {
 	position: relative;
 	display: -webkit-box;
@@ -107,7 +110,6 @@ p[class^="col-"] {
 	background-blend-mode: multiply;
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
-	width: 100%;
 	height: auto;
 	vertical-align: middle;
 	transition: 3s;
