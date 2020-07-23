@@ -11,7 +11,6 @@ p[class^="col-"] {
 	font-style: normal;
 	font-size: 1em;
 	font-weight: 500;
-	/*line-height: 1;*/
 }
 #drift-scroll {
 	font-family: 'Roboto'; 
@@ -75,9 +74,9 @@ p[class^="col-"] {
 	font-size: 0.8em;
 	font-weight: 300;
 	line-height: 1.3em;
-	position: relative;
-	float: left;
-	margin-left: 5px;
+	position: absolute;
+	right: -3.6em;
+	top: 0px;
 	writing-mode: vertical-rl;
 	-webkit-writing-mode: vertical-rl;
 	-ms-writing-mode: vertical-rl;
@@ -90,9 +89,6 @@ p[class^="col-"] {
 	letter-spacing: 1px;
 	position: relative;
 }
-.drift-img > div {
-	align-items: center;
-}
 [class^="col-"] {
 	position: relative;
 	display: -webkit-box;
@@ -102,22 +98,37 @@ p[class^="col-"] {
 	display: -webkit-inline-box;
 	display: flex;
 	height: auto;
+	overflow: visible;
 }
-[class^="img-"] {
+.drift-img {
 	flex-basis: auto;
+	align-items: center;
 }
-[class^="col-"] > img {
+.drift-img img {
 	background-blend-mode: multiply;
 	filter: grayscale(100%);
 	-webkit-filter: grayscale(100%);
+	width: 100%;
 	height: auto;
-	vertical-align: middle;
+	/*vertical-align: middle;*/
 	transition: 3s;
 }
-[class^="col-"] > img:hover {
+.drift-img img:hover {
 	filter: grayscale(0%);
 	-webkit-filter: grayscale(0%);
 	transition: 0.5s;
+}
+[class^="img-"] {
+	position: relative;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: -webkit-inline-box;
+	display: flex;
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
 }
 [class^="col-"]:last-child {
 	margin-bottom:200px;

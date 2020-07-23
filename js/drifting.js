@@ -33,7 +33,7 @@ $(document).ready(function() {
 		};
 		showScroll();
 	});
-
+	
 	$("#drift-scroll").hide();
 	$(".drift-data").hide();
 	$("#drifting").on('mouseenter', '.drift-img', function(){
