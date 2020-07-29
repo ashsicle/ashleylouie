@@ -1,11 +1,6 @@
 body {
 	background: #d8d8d8;
 }
-hr {
-	background: #000;
-	border: 0px;
-	height: 1px;
-}
 p[class^="col-"] {
 	font-family: 'Roboto'; 
 	font-style: normal;

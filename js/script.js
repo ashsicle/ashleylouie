@@ -124,7 +124,7 @@ function navClick(navFilter) {
   $("#content").empty().show();
   $("#aboutcontent").hide();
   for (var i = 0; i < navFilter.length; i++) {
-    var templateString = "<div class='box' id='b" + (i + 1) +"'><a href='./project/" + navFilter[i].projID + ".html'><div class='caption'><span class='h2'>" + navFilter[i].projTitle + "</span></a>&emsp;" + navFilter[i].projDescr + "</div><a href='./project/" + navFilter[i].projID + ".html'><img class='thumb link' data-projectname=" + navFilter[i].projID + " src='./images/" + navFilter[i].imgSrc + "'></img></a></div>";
+    var templateString = "<div class='box' id='b" + (i + 1) +"'><a href='./project/" + navFilter[i].projID + ".html'><div class='caption'><h3>" + navFilter[i].projTitle + "</h3></a>&emsp;" + navFilter[i].projDescr + "</div><a href='./project/" + navFilter[i].projID + ".html'><img class='img-thumb link' data-projectname=" + navFilter[i].projID + " src='./images/" + navFilter[i].imgSrc + "'></img></a></div>";
   $("#content").append(templateString)
   };
 };

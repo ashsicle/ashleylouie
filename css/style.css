@@ -24,13 +24,12 @@ header {
 	position:relative;
 	margin:auto;
 	margin-top: 70px;
-/*	width:80%;*/
 	min-width: 630px;
 	clear: both;
 	overflow: auto hidden;
 /*	border: solid 1px #eee;*/
 }
-.h1 {
+h1, .h1 {
 	font-size: 1.5em;
 	font-weight: 500;
 	letter-spacing: 5px;
@@ -40,16 +39,27 @@ header {
 	right: 0px;
 	float:right;
 }
-.h1:hover {
+h1:hover, .h1:hover {
 	color: #000;
+	text-decoration: none;
 }
-.h2 {
+h2, .h5 {
+	font-family: 'Barlow';
+	font-style: normal;
+	font-size: 1.5em;
+	font-weight: 600;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	display: inline;
+}
+h3, .h2 {
 	font-family: 'Barlow';
 	font-style: normal;
 	font-size: 1em;
 	font-weight: 500;
 	letter-spacing: 4px;
 	text-transform: uppercase;
+	display: inline;
 }
 .h3 {
 	font-family: 'Barlow'; 
@@ -66,13 +76,10 @@ header {
 	right: 0px;
 	float:right;
 }
-.h5 {
-	font-family: 'Barlow';
-	font-style: normal;
-	font-size: 1.5em;
-	font-weight: 600;
-	letter-spacing: 5px;
-	text-transform: uppercase;
+hr {
+	background: #000;
+	border: 0px;
+	height: 1px;
 }
 body {
 	font-family: 'Cutive Mono';
@@ -91,44 +98,42 @@ body {
 #content, #project-content {
 	padding: 2em 0 2em;
 }
-ul {
+#nav ul {
 	position:relative;
 	margin:0px;
 	padding:0px;
 	width:100%;
 	display: inline;
 }
-li {
+#nav ul li {
 	list-style: none;
 	display: inline;
 }
-ul li:hover ul {
+#nav ul li:hover ul {
 	display: inline-block;
-}
-ul ul {
-	position: absolute;
-	top:1.25em;
-	left:0px;
-	display: none;
-}
-ul ul a {
-	color:#555;
 }
 a {
 	text-decoration:none;
-	color:#000000;
+	color: #000;
 }
-a:hover, #nav span:hover {
-	color:#aaa;
-}
-a:hover, .link:hover {
-	cursor:pointer;
+a:hover, .link:hover, #nav span:hover {
+	color: #aaa;
+	cursor: pointer;
 	text-decoration: underline;
+}
+.text-right {
+	align-items: center;
+}
+.text-right p {
+	width: 100%;
+}
+.text-ref {
+	font-size: .8em;
 }
 #AL {
 	height: 50px;
 }
-.thumb {
+.img-thumb {
 	position: relative;
 	margin-bottom: 50px;
 	display: block;
@@ -160,6 +165,7 @@ a:hover, .link:hover {
 	margin-bottom: 20px;
 	height: auto;
 	width: 100%;
+	align-items: center;
 }
 .img-row > div:not(:last-child) {
 	margin-right: 20px;
@@ -256,6 +262,20 @@ a:hover, .link:hover {
 	-ms-flex: 0.5625;
 	flex: 0.5625;
 }
+.iframe {
+	position: relative;
+	width: 100%;
+	height: 35vw;
+	min-height: 300px;
+	margin-bottom: 20px;
+}
+iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
 .outline {
 	box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -268,7 +288,7 @@ a:hover, .link:hover {
 	#outercontainer {
 		width: 1290px;
 	}
-	.thumb {
+	.img-thumb {
 		max-width: 1290px;
 		max-height: 726px;
 	}
@@ -278,8 +298,12 @@ a:hover, .link:hover {
 	.img-grid img {
 		max-width: 307px;
 	}
-	p {
+	p, ol, ul {
 	width: 70%;
+	}
+	.article p:not(.right), .article ol:not(.right), .article ul:not(.right), .article h3 {
+		margin-left: 15%;
+		margin-right: 15%;
 	}
 }
 /*XL screen*/
@@ -287,7 +311,7 @@ a:hover, .link:hover {
 	#outercontainer {
 		width: 960px;
 	}
-	.thumb {
+	.img-thumb {
 		max-width: 960px;
 		max-height: 540px;
 	}
@@ -297,8 +321,12 @@ a:hover, .link:hover {
 	.img-grid img {
 		max-width: 306px;
 	}
-	p {
+	p, ol, ul {
 	width: 80%;
+	}
+	.article p:not(.right), .article ol:not(.right), .article ul:not(.right), .article h3 {
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 }
 /*L tablet (landscape)*/
@@ -306,7 +334,7 @@ a:hover, .link:hover {
 	#outercontainer {
 		width: 800px;
 	}
-	.thumb {
+	.img-thumb {
 		max-width: 800px;
 		max-height: 450px;
 	}
@@ -316,8 +344,12 @@ a:hover, .link:hover {
 	.img-grid img {
 		max-width: 390px;
 	}
-	p {
-	width: 80%;
+	p, ol, ul {
+	width: 90%;
+	}
+	.article p:not(.right), .article ol:not(.right), .article ul:not(.right), .article h3 {
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 }
 /*M tablet (portrait)*/
@@ -325,7 +357,7 @@ a:hover, .link:hover {
 	#outercontainer {
 		width:600px;
 	}
-	.thumb {
+	.img-thumb {
 		max-width: 600px;
 		max-height: 338px;
 	}
@@ -341,7 +373,7 @@ a:hover, .link:hover {
 	#outercontainer {
 		width: 400px;
 	}
-	.thumb {
+	.img-thumb {
 		max-width: 400px;
 		max-height: 225px;
 	}
@@ -357,7 +389,7 @@ a:hover, .link:hover {
 	#outercontainer {
 		width: 98%;
 	}
-	.thumb {
+	.img-thumb {
 		max-width: 480px;
 		max-height: 270px;
 	}
