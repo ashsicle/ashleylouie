@@ -125,6 +125,9 @@ a:hover, .link:hover, #nav span:hover {
 	cursor: pointer;
 	text-decoration: underline;
 }
+sup {
+	line-height: 0.6em;
+}
 .text-right {
 	align-items: center;
 }
