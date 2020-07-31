@@ -1,3 +1,13 @@
+body {
+	font-family: 'Cutive Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-size: .95em;
+	position: relative;
+	width: 99%;
+	min-height: 90%;
+	/*border: solid 1px #eee;*/
+}
 header, footer, #nav {
 	font-family: 'Barlow'; 
 	font-style: normal;
@@ -29,7 +39,7 @@ header {
 	overflow: auto hidden;
 /*	border: solid 1px #eee;*/
 }
-.h1 {
+h1, .h1 {
 	font-size: 1.5em;
 	font-weight: 500;
 	letter-spacing: 5px;
@@ -81,16 +91,6 @@ hr {
 	background: #000;
 	border: 0px;
 	height: 1px;
-}
-body {
-	font-family: 'Cutive Mono';
-	font-style: normal;
-	font-weight: 400;
-	font-size: .95em;
-	position: relative;
-	width: 99%;
-	min-height: 90%;
-	/*border: solid 1px #eee;*/
 }
 #aboutcontent {
 	margin-bottom: 20px;
@@ -344,13 +344,6 @@ iframe {
 	}
 	.img-grid img {
 		max-width: 390px;
-	}
-	p, ol, ul {
-	width: 90%;
-	}
-	.article > p:not(.right), .article > ol:not(.right), .article > ul:not(.right), .article > .h2 {
-		margin-left: 5%;
-		margin-right: 5%;
 	}
 }
 /*M tablet (portrait)*/
