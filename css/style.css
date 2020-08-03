@@ -9,7 +9,7 @@ body {
 	min-height: 90%;
 	/*border: solid 1px #eee;*/
 }
-header, footer, #nav {
+header, footer, nav {
 	font-family: 'Barlow'; 
 	font-style: normal;
 	font-size: .75em;
@@ -25,7 +25,7 @@ header {
 	clear:both;
 	/*border: solid 1px #eee;*/
 }
-#nav, footer {
+nav, footer {
 	margin: 20px 0px 20px;
 	position: relative;
 	clear: both;
@@ -102,25 +102,25 @@ hr {
 #content, #project-content {
 	padding: 2em 0 2em;
 }
-#nav ul {
+nav ul {
 	position:relative;
 	margin:0px;
 	padding:0px;
 	width:100%;
 	display: inline;
 }
-#nav ul li {
+nav ul li {
 	list-style: none;
 	display: inline;
 }
-#nav ul li:hover ul {
+nav ul li:hover ul {
 	display: inline-block;
 }
 a {
 	text-decoration:none;
 	color: #000;
 }
-a:hover, .link:hover, #nav span:hover {
+a:hover, .link:hover, nav span:hover {
 	color: #aaa;
 	cursor: pointer;
 	text-decoration: underline;
