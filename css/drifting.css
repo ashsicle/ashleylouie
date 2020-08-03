@@ -1,12 +1,12 @@
 body {
 	background: #d8d8d8;
 }
-p[class^="col-"] {
+/*p[class^="col-"] {
 	font-family: 'Roboto'; 
 	font-style: normal;
 	font-size: 1em;
 	font-weight: 500;
-}
+}*/
 #drift-scroll {
 	font-family: 'Roboto'; 
 	font-style: normal;
@@ -23,6 +23,18 @@ p[class^="col-"] {
 }
 #drifting {
 	overflow: auto hidden;
+	padding: 0 6% 200px 6%;
+	display: grid;
+	grid-template-columns: 18% 18% 18% 18% 18%;
+	grid-column-gap: 2.5%;
+	grid-row-gap: 20px;
+}
+#drifting p {
+	width: 100%;
+	font-family: 'Roboto'; 
+	font-style: normal;
+	font-weight: 500;
+	margin-top: 0px;
 }
 .drift-title {
 	font-family: 'Roboto'; 
@@ -30,24 +42,21 @@ p[class^="col-"] {
 	font-size: 1em;
 	font-weight: 500;
 	position: relative;
-	float: right;
-	clear: right;
 	writing-mode: vertical-rl;
 	-webkit-writing-mode: vertical-rl;
 	-ms-writing-mode: vertical-rl;
-	display: block;
-	height: auto;
 }
 #drift-title {
-	font-style: bold;
+	position: relative;
 	font-size: 8em;
 	font-weight: 900;
 	letter-spacing: 3px;
+	right: 48px;
 }
 #drift-title2 {
 	position: relative;
 	top: 6px;
-	right: -15px;
+	right: 96px;
 }
 .drift-subtitle {
 	font-family: 'Roboto'; 
@@ -86,20 +95,11 @@ p[class^="col-"] {
 	letter-spacing: 1px;
 	position: relative;
 }
-[class^="col-"] {
-	position: relative;
-	display: -webkit-box;
-	display: -moz-box;
-	display: -ms-flexbox;
-	display: -webkit-flex;
-	display: -webkit-inline-box;
-	display: flex;
-	height: auto;
-	overflow: visible;
-}
 .drift-img {
+	position: relative;
 	flex-basis: auto;
 	align-items: center;
+	top: 0px;
 }
 .drift-img img {
 	background-blend-mode: multiply;
@@ -127,101 +127,183 @@ p[class^="col-"] {
 	height: auto;
 	vertical-align: middle;
 }
-[class^="col-"]:last-child {
-	margin-bottom:200px;
+.half-l {
+	margin-left: 11%;
 }
-.clear {
-	clear: both;
+.half-r {
+	margin-right: 11%;
 }
-.clear-l {
-	clear: left;
+.grid-01 {
+	grid-column: 5/6;
+	grid-row: 3/9;
 }
-.clear-r {
-	clear: right;
+.grid-02 {
+	grid-column: 1/5;
+	grid-row: 6/10;
 }
-.col-01 {
-	width: 8%;
+.grid-03 {
+	grid-column: 1/4;
+	grid-row: 10/12;
 }
-.col-02 {
-	width: 16%;
+.grid-04 {
+	grid-column: 3/6;
+	grid-row: 14/18;
 }
-.col-03 {
-	width: 26%;
+.grid-05 {
+	grid-column: 1/3;
+	grid-row: 19/25;
 }
-.col-04 {
-	width: 34%;
+.grid-06 {
+	grid-column: 4/6;
+	grid-row: 20/25;
 }
-.col-05 {
-	width: 44%;
+.grid-07 {
+	grid-column: 2/4;
+	grid-row: 27/30;
 }
-.col-06 {
-	width: 52%;
+.grid-08 {
+	grid-column: 1/6;
+	grid-row: 30/36;
 }
-.col-07 {
-	width: 62%;
+.grid-09 {
+	grid-column: 4/6;
+	grid-row: 36/39;
 }
-.col-08 {
-	width: 70%;
+.grid-10 {
+	grid-column: 1/6;
+	grid-row: 42/49;
 }
-.col-09 {
-	width: 80%;
+.grid-11 {
+	grid-column: 4/6;
+	grid-row: 49/54;
 }
-.col-10 {
-	width: 88%;
+.grid-12 {
+	grid-column: 2/3;
+	grid-row: 52/55;
 }
-.col-100 {
-	width: 94%;
+.grid-13 {
+	grid-column: 1/2;
+	grid-row: 58/64;
 }
-.l-0 {
-	left: 0%;
+.grid-14 {
+	grid-column: 2/5;
+	grid-row: 59/66;
 }
-.l-00 {
-	left: 6%;
+.grid-15 {
+	grid-column: 2/6;
+	grid-row: 67/70;
 }
-.l-01 {
-	left: 14%;
+.grid-16 {
+	grid-column: 3/6;
+	grid-row: 73/77;
 }
-.l-02 {
-	left: 24%;
+.grid-17 {
+	grid-column: 1/5;
+	grid-row: 77/81;
 }
-.l-03 {
-	left: 32%;
+.grid-18 {
+	grid-column: 4/6;
+	grid-row: 81/84;
 }
-.l-04 {
-	left: 42%;
+.grid-19 {
+	grid-column: 3/6;
+	grid-row: 87/91;
 }
-.l-05 {
-	left: 50%;
+.grid-20 {
+	grid-column: 1/6;
+	grid-row: 91/97;
 }
-.l-06 {
-	left: 60%;
+.grid-21 {
+	grid-column: 2/4;
+	grid-row: 100/102;
 }
-.l-08 {
-	left: 78%;
+.grid-22 {
+	grid-column: 1/4;
+	grid-row: 103/108;
 }
-.dn-05 {
-	margin-top: 50px;
+.grid-23 {
+	grid-column: 4/6;
+	grid-row: 105/110;
 }
-.dn-1 {
-	margin-top: 100px;
+.grid-24 {
+	grid-column: 1/5;
+	grid-row: 112/120;
 }
-.dn-2 {
-	margin-top: 200px;
+.grid-25 {
+	grid-column: 5/6;
+	grid-row: 117/121;
 }
-.dn-3 {
-	margin-top: 300px;
+.grid-26 {
+	grid-column: 3/6;
+	grid-row: 124/128;
 }
-.dn-4 {
-	margin-top: 400px;
+.grid-27 {
+	grid-column: 2/6;
+	grid-row: 128/131;
 }
-.up-1 {
-	margin-top: -100px;
+.grid-28 {
+	grid-column: 1/3;
+	grid-row: 133/137;
 }
-.up-2 {
-	margin-top: -200px;
+.grid-29 {
+	grid-column: 3/5;
+	grid-row: 135/139;
 }
-.up-4 {
-	margin-top: -400px;
+.grid-30 {
+	grid-column: 1/6;
+	grid-row: 139/145;
+}
+.grid-31 {
+	grid-column: 2/5;
+	grid-row: 148/150;
+}
+.grid-32 {
+	grid-column: 4/6;
+	grid-row: 151/159;
+}
+.grid-33 {
+	grid-column: 1/4;
+	grid-row: 156/160;
+}
+.grid-34 {
+	grid-column: 1/6;
+	grid-row: 163/169;
+}
+.grid-35 {
+	grid-column: 4/6;
+	grid-row: 169/173;
+}
+.grid-36 {
+	grid-column: 1/5;
+	grid-row: 176/181;
+}
+.grid-37 {
+	grid-column: 4/6;
+	grid-row: 182/188;
+}
+.grid-38 {
+	grid-column: 3/6;
+	grid-row: 191/193;
+}
+.grid-39 {
+	grid-column: 1/3;
+	grid-row: 194/199;
+}
+.grid-40 {
+	grid-column: 3/6;
+	grid-row: 196/203;
+}
+.grid-41 {
+	grid-column: 2/5;
+	grid-row: 205/207;
+}
+.grid-42 {
+	grid-column: 4/6;
+	grid-row: 207/210;
+}
+.grid-43 {
+	grid-column: 1/5;
+	grid-row: 211/215;
 }
 
 /*XL screen*/
@@ -241,5 +323,104 @@ p[class^="col-"] {
 	}
 	p {
 		width: 80%;
+	}
+	#drifting {
+		padding: 0 8.5% 200px 8.5%;
+		grid-template-columns: 16% 16% 16% 16% 16%;
+		grid-column-gap: 5%;
+		grid-auto-rows: 75px;
+	}
+	#drifting p {
+		font-size: 1.0em;
+		line-height: 1.2em;
+	}
+	#drift-title {
+		font-size: 8em;
+		right: 46px;
+	}
+	#drift-title2 {
+		right: 94px;
+	}
+	.left {
+	margin-left: -9%;
+	}
+	.full {
+		margin-left: -9%;
+		margin-right: -2%;
+	}
+}
+/*L tablet (landscape)*/
+@media screen and (min-width:801px) and (max-width:1024px) {
+	#drifting {
+		padding: 0 6% 200px 6%;
+		grid-template-columns: 18% 18% 18% 18% 18%;
+		grid-column-gap: 2.5%;
+		grid-auto-rows: 60px;
+	}
+	#drifting p {
+		font-size: 1.0em;
+		line-height: 1.2em;
+	}
+	#drift-title {
+		font-size: 8em;
+		right: 46px;
+	}
+	#drift-title2 {
+		right: 94px;
+	}
+	.left {
+	margin-left: -9%;
+	}
+	.full {
+		margin-left: -9%;
+		margin-right: -1.75%;
+	}
+}
+/*M tablet (portrait)*/
+@media screen and (min-width:601px) and (max-width:800px) {
+	#drifting {
+		grid-auto-rows: 48px;
+	}
+	#drifting p {
+		font-size: 0.80em;
+		line-height: 1.3em;
+	}
+	#drift-title {
+		font-size: 6em;
+		right: 32px;
+	}
+	#drift-title2 {
+		right: 64px;
+	}
+	.left {
+	margin-left: -9%;
+	}
+	.full {
+		margin-left: -9%;
+		margin-right: 0%;
+	}
+}
+/*S phone (landscape)*/
+@media screen and (max-width:600px) {
+	#drifting {
+		grid-auto-rows: 48px;
+	}
+	#drifting p {
+		font-size: 0.80em;
+		line-height: 1.3em;
+	}
+	#drift-title {
+		font-size: 6em;
+		right: 32px;
+	}
+	#drift-title2 {
+		right: 64px;
+	}
+	.left {
+	margin-left: -9%;
+	}
+	.full {
+		margin-left: -9%;
+		margin-right: 0%;
 	}
 }

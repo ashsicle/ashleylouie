@@ -116,7 +116,7 @@ allProjects = {
 var navHome = [playlab, conflictresolution, popsindex, amplifyhudson, /*denguevulnerability,*/ nycorganicwaste, drifting, lifeaquatic, agrotech, pedestrianspectrum, dxd2019, magicgrants2019];
 var navSD = [popsindex, nycorganicwaste, /*denguevulnerability,*/ conflictresolution, agrotech, amplifyhudson, pedestrianspectrum];
 var navUF = [drifting, pedestrianspectrum, agrotech, lifeaquatic, popsindex, amplifyhudson, nycorganicwaste, collagescape];
-var navSA = [amplifyhudson, playlab, conflictresolution, agrotech, popsindex, /*denguevulnerability,*/ nycorganicwaste, drifting, lifeaquatic, pedestrianspectrum, dxd2019, magicgrants2019];
+var navSA = [amplifyhudson, conflictresolution, playlab, agrotech, popsindex, /*denguevulnerability,*/ nycorganicwaste, drifting, lifeaquatic, pedestrianspectrum, dxd2019, magicgrants2019];
 var navGD = [dxd2019, drifting, magicgrants2019, thecave, lines]
 var navAll = [playlab, conflictresolution, popsindex, amplifyhudson, dxd2019, /*denguevulnerability,*/ nycorganicwaste, drifting, lifeaquatic, agrotech, magicgrants2019, lines, pedestrianspectrum, thecave, collagescape];
 
@@ -124,7 +124,7 @@ function navClick(navFilter) {
   $("#content").empty().show();
   $("#aboutcontent").hide();
   for (var i = 0; i < navFilter.length; i++) {
-    var templateString = "<div class='box' id='b" + (i + 1) +"'><a href='./project/" + navFilter[i].projID + ".html'><div class='caption'><span class='h2'>" + navFilter[i].projTitle + "</span></a>&emsp;" + navFilter[i].projDescr + "</div><a href='./project/" + navFilter[i].projID + ".html'><img class='img-thumb link' data-projectname=" + navFilter[i].projID + " src='./images/" + navFilter[i].imgSrc + "'></img></a></div>";
+    var templateString = "<div class='box' id='b" + (i + 1) +"'><a href='./project/" + navFilter[i].projID + ".html'><div class='caption'><span class='h2'>" + navFilter[i].projTitle + "</span></a>&emsp;" + navFilter[i].projDescr + "</div><a href='./project/" + navFilter[i].projID + ".html'><img class='img-thumb link' data-projectname=" + navFilter[i].projID + " src='./images/" + navFilter[i].imgSrc + "' alt='" + navFilter[i].projTitle + "'></a></div>";
   $("#content").append(templateString)
   };
 };
