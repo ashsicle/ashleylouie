@@ -102,6 +102,7 @@ hr {
 }
 #content, #project-content {
 	padding: 2em 0 2em;
+	overflow: hidden;
 }
 nav ul {
 	position:relative;
