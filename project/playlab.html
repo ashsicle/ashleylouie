@@ -2,6 +2,7 @@
 <head>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Barlow">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cutive+Mono">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Libre+Baskerville">
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
 	<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="../js/script.js"></script>
@@ -10,7 +11,7 @@
 <div id="outercontainer">
 	<header>
 		<a href="../index.html"><img id="AL" src="../images/AL.svg" alt="AL Logo"></a>
-		<span class="h1"><a href="../index.html">Ashley Louie</a></span>
+		<h1 class="h1"><a href="../index.html">Ashley Louie</a></h1>
 	</header>
 	<nav>
     	<ul>
@@ -18,49 +19,111 @@
     	</ul>
   </nav>
 	<body>
-		<div id="project-content"><!--  class="article"> -->
-			<h1 class="h5">playLab.City</h1><br>
+		<div id="project-content" class="article">
+			<h1 class="h5">playLab</h1><br>
 			collective interactive platform for participatory design<br><br>
 			<a href="https://medium.com/data-mining-the-city/playlab-city-41bd3ac05793" target="_blank"><img class="img-single" src="../images/playlab_01_thumb.gif"></a>
 			<span class='h3'>Collaborator</span>&emsp;Richard Chou<br><br>
 			
 			<p>In order for public engagement to be more meaningful to urban designers, participatory methods using agent-based simulations can allow stakeholders to intuitively play within design constraints. playLab.City provides a platform, situated between urban design participation and agent based simulation, where stakeholders have a greater opportunity to exercise their right to the city.</p>
-			<!-- <p>Urban design ambitiously tries to improve places for people, while also scrutinizing the city’s complex and interconnected networks at a variety of scales. With an ambiguous intersection of architecture, landscape, and planning, urban design teams of industry experts are often outsiders when faced with the challenge of designing for specific communities. These designers, who are used to building-industry jargon, need a way of communicating effectively with stakeholders in order to advocate for people’s right to the city. Although community outreach is often an integral part of inclusive participation in design, the use of agent-based simulation in playLab.City provides an opportunity for designers to receive more informed feedback from stakeholders.</p><br>
-			<h2 class="h2">Inclusive Design Agency</h2>
-			<p>The assertion that individuals have a right to the city is rooted in the critical context of social science and requires urban designers to be ethically responsible for providing inclusive avenues for participation. Sociologist, Henri Lefebvre first introduced the concept of the right to the city, [1] questioning the control of power to influence the creation of urban spaces as related to capital and governance. Additionally drawing upon the social relationships between individuals and the city, anthropologist, David Harvey, further posits that it’s a fundamental human right to “exercise … a collective power over the processes of urbanization.” [2] Providing avenues for inclusive engagement from individuals is essential for urban design to represent the collective input of its people. Architect and urban designer, Neeraj Bhatia, adds further criticism of design experts’ exclusive access to using the city as a laboratory. [3] Positioned as a participatory platform, playLab.City invokes the consciousness of the city as a laboratory, while also inviting people to exercise their right to the city by directly inputting their ideas.</p><br>
-			<h2 class="h2">Current Participatory Methods</h2>
-			<p>As the experts who hold the power to change cities, urban designers are limited by their participatory methods to receive directed input from stakeholders. These processes are often limited to surveys, to verbal conversations, and to placing stickers or pins on a printed map, which can easily conclude in <em>fantasy wishlists from stakeholders who do not fully understand the complex constraints that designers must consider</em>. For example, if a stakeholder suggests locating a grocery store on a particular street, then the typical methods of participatory design will end there with that one-way desire. However, with the ability for modeled simulations to show how agents of specific demographics have varying degrees of access to that grocery store’s location could potentially influence the stakeholder to make a more informed suggestion or spark a deeper conversation about envisioning the consequences of specific design decisions. The simulation aspect of playLab.City provides an opportunity for participation in design input to be more meaningful.</p><br>
-			<h2 class="h2">Participatory Platform</h2>
-			<p>The playLab.City python canvas allows designers to receive more informed feedback from their engagement with stakeholders by serving as a tool for communication. The user interface is approachable to users with a hand-sketched appearance, to allow users to feel like they’re included in part of the design process. playLab.City allows users to drag programs to specific locations on the site and to customize the program parameters with sliders. Additionally, the ability to harness processing and agent-based simulation allows the user to learn from their decisions, and to make informed adjustments to their programmatic input.</p><br>
-			<h2 class="h2">Communication Platform</h2>
-			<p>playLab.City aims to improve communication between designers and the participants. Traditional industry standard methods for programming outreach to stakeholders involve verbal communication, surveys, and graphic visualizations, such as maps, precedent project images, and abstract bubble diagrams. These traditional methods of participatory engagement are limited to a one-way flow of information. The designer will talk about the project and site, then the participant will fill out the survey, point at a map, place a sticker or pin on a location, and talk about their desired program. Often times, this method results in an unachievable wish list of programs because it’s difficult for the participant to understand the plethora of factors that designers must consider when proposing a project.</p>
-			<img>
-			<p>The interactive approach and simulated feedback in playLab.City assists designers in communicating design constraints to participants to receive feedback that goes beyond the surface-level wishlist. Through parameter-driven rules, users intuitively learn from the built-in design constraints and can play within this game-like framework. The python canvas as a visual communication tool can encourage deeper discussions on speculative ideas relative to the design constraints, assumptions, and limitations of the program.</p><br>
-			<h2 class="h2">Simulation Feedback</h2>
-			<p>The agent-based simulation environment provides instant feedback to users. This feedback helps the user and designer to recognize design impacts and speculate other design possibilities. In addition, the visual feedback from the simulation allows easier interaction between designer and community. In playLab.Hudson, the simulation focuses on two main aspects that are helpful for gathering feedback.</p><br>
-			<h2 class="h2">Environment</h2>
-			<p>The environment of playLab.Hudson shows the historic Warren Street neighborhood in the city of Hudson. Users interact with the environment by toggling the time of day, deploying program, and adjust parameters for program attractions. The model depicts a typical daytime or night time of street activity. As previously mentioned. The view mode can be toggled on/ off to allow more in-depth feedback.</p><br>
+			<br>
+			<div class="flex-row">
+				<div class="flex-1-1 text-center">
+					<span class="h6">"The right to the city is... a right to change ourselves by changing the city more after our heart’s desire."</span><br>
+					<span class="h7">&mdash; David Harvey</span>
+				</div>
+				<div class="flex-3-2">
+					<h2 class="h2">Participatory Urban Design</h2>
+					<p>Urban design ambitiously tries to improve places for people, while also scrutinizing the city’s complex and interconnected networks at a variety of scales. At the intersection of architecture, landscape, and planning, teams of industry experts are often outsiders when faced with the challenge of designing for specific communities. These designers, who are used to building-industry jargon, need a way of communicating effectively with stakeholders in order to advocate for people’s right to the city. Although community outreach is often an integral part of inclusive participation in design, the playLab.City canvas allows stakeholders to directly input their ideas and learn from the agent-based simulation in order to make informed decisions on their programmatic input.</p>
+				</div>
+			</div>
+			
+			<div class="flex-row">
+				<fig class="flex-1-1">
+					<img src="../images/playlab_02.png" alt="Cybernetics of playLab.City">
+					<figcaption class="h3">Cybernetics of playLab</figcaption>
+				</fig>
+				<div class="flex-3-2">
+					<h2 class="h2">Communication Platform</h2>
+					<p>playLab.City aims to improve communication between designers and the participants. Programming outreach usually involves surveys, maps, precedent images, and abstract bubble diagrams, however, these traditional methods limit the conversation to a one-way flow of information. The designer will explain the site context, then the participant will complete a survey, point at a map, pin a location, and talk about their desired program. Often times, this results in an unachievable wish list of programs, constrained by a number of external factors that are difficult for designers to convey.</p>
+					<p>The interactive approach of playLab.City assists designers in simulating these design constraints, which can incite participants to provide feedback that goes beyond the surface-level wishlist. Through parameter-driven rules, like a game, participants intuitively learn benefits and consequences of design proposals and can play within this game-like framework and can encourage deeper discussions on speculative ideas relative to the design constraints, assumptions, and limitations of the program.</p>
+				</div>
+			</div>
+			<br>
 			<h2 class="h2">Program</h2>
-			<p>Program objects include the following: seating, bike-share, pop-up art, community center, plaza, library, mobile grocery, grocery store, and basketball court. Each program is weighted with a multiplier that establishes the strength of attraction for each demographic. The multiplier ranges between 0.0 to 10.0, where it represents the attraction strength to steer the agents. The program creation sliders on the sidebar allow users to create customized programs with specific levels of these three parameters. The intention here is to allow flexibility for the users to create programs they wish to see beyond the default programs and engage in the conversation about the nature of these new programs, as well as its impacts.</p>
-			<img><br>
+			<p>As a proof of concept, Hudson, NY was studied and serves as the context for proposed program objects, including: seating, bike-share, pop-up art, community center, plaza, library, mobile grocery, grocery store, and basketball court. Each program is weighted with a multiplier that establishes the strength of attraction for each demographic. The multiplier ranges between 0.0 to 10.0, where it represents the attraction strength to steer the agents. The program creation sliders on the sidebar allow users to create customized programs with specific levels of these three parameters. The intention here is to allow flexibility for the users to propose programs beyond the default programs and spark conversation with these ideas and discuss their impacts.</p>
+			<fig>
+				<img class="img-single" src="../images/playlab_03.png" alt="Weighted Program Attibutes">
+			</fig>
+			<div class="flex-row">
+				<div class="flex-1-1">
+					<h2 class="h2">Program Creation</h2>
+					<p>Each program is weighted with a multiplier that affects the attraction levels of each demographic agent. These variables can be adjusted, to better understand specific programmatic input tailored to attract specific demographic groups. Customizing levels of attraction to a particular program, adds flexibility to built-in assumptions and enriches the quality of the opinion-based feedback.</p>
+				</div>
+				<div class="flex-1-1">
+					<h2 class="h2">Environment</h2>
+					<p>The environment shows the historic main street in the city of Hudson. Participants can change the environment by toggling the time of day, deploying program, and adjust parameters for program attractions. Typical street activity can be further developed in the agent-based simulation to encompass commute, weekend, or other patterns based on the time of day.</p><br>
+				</div>
+				<div class="flex-1-1">
+					<h2 class="h2">Simulation Feedback</h2>
+					<p>Agent-based simulation provides feedback with programmatic attraction as a proxy for design impact. If agents from one demographic group are attracted more than another group, seeing the feedback could spark conversation on who benefits from different design ideas and allows an opportunity for participants to affirm their reasons for introducing certain program or to revise proposal to better fit their goals.</p>
+				</div>
+			</div>
+			<div class="flex-row">
+				<fig class="flex-2-3">
+					<img src="../images/playlab_05.gif" alt="Customizable Program Sliders">
+					<figcaption class="h3">Customize Program</figcaption>
+				</fig>
+				<fig class="flex-3-2">
+					<img src="../images/playlab_04.gif" alt="Environment Toggle">
+					<figcaption class="h3">Change Environment</figcaption>
+				</fig>
+				<fig class="flex-4-3">
+					<img src="../images/playlab_06.gif" alt="Simulation Feedback">
+					<figcaption class="h3">Simulation Feedback</figcaption>
+				</fig>
+			</div><br>
 			<h2 class="h2">Agents</h2>
-			<p>The model uses three agent types as the basis of the three major stakeholders in the city of Hudson. The agents are classified as low-income residents, median-high income residents, and visitors, which are three of the significant actors in Hudson’s community. During our on-site study in the City of Hudson, we learned from the residents the growing gentrification issue, and the goal of the simulation is to visualize the challenges between the need for balance between the different actors within the city.</p>
-			<p>In real-world context, gentrifying neighborhoods experiencing an influx of unaffordable programs in addition to new residents, which increases property value and creates displacements of local residents outside of the neighborhood. While the cause and effect of gentrification is complex, the agent behavior defined in this project demonstrates such impact in a simplistic, and direct response to user-programming. [See Weighted Program Matrix in the table below.]</p>
-			<img><br>
+			<p>The model uses three agents, which align to significant stakeholders in the city of Hudson: visitors, low-income residents, and median-high income residents. During on-site studies in the City of Hudson, residents talked about growing concerns for gentrification, and the simulation aims to visualize the trade-offs between different actors' needs within the city. While the causes and effects of gentrification are complex, agent-based simulation demonstrates simplifies the potential impact as a direct response to programmatic inputs.</p>
+			<div class="flex-row">
+				<div class="flex-2-3">
+					<h2 class="h2">Visitor</h2>
+					<p>Visitors are transient, often staying for a leisurely weekend. They are attracted to “temporal” public programs, such as special events, pop-up installations, and bikeshares. These leisure activities are lower necessities in everyday life, in contrast to reliance on community resources like the library. Visitor agents are randomly assigned an income level, and will adapt to similar cost constraints as respective resident income levels.</p>
+				</div>
+				<fig class="flex-16-9">
+					<img src="../images/playlab_07.png" alt="Visitor Decision Tree">
+				</fig>
+			</div>
+			<div class="flex-row">
+				<div class="flex-2-3">
+					<h2 class="h2">Resident, Low Income</h2>
+					<p>As the City of Hudson continues to evolve, development brings unequal benefits, facilitating easier access to land and amenities for some, while compounding challenges for others. U.S. Census data shows that low-income residents who live in Hudson have limited access to a vehicle and other community amenities. Limited mobility and income will discourage residents from participating in antique fairs or pop-up art installations, which are often luxuries with unaffordable costs.</p>
+				</div>
+				<fig class="flex-16-9">
+					<img src="../images/playlab_08.png" alt="Low Income Resident Decision Tree">
+				</fig>
+			</div>
+			<div class="flex-row">
+				<div class="flex-2-3">
+					<h2 class="h2">Resident, Medium to High Income</h2>
+					<p>Similar to the low-income population, residents who live in more affluent areas of Hudson, also voiced a need for improved community infrastructure. Many of these residents, however, can also afford the lifestyle of enjoying boutique retail on Warren Street. These residents actively choose the lifestyle that Hudson provides, while are also supporters of making long-term improvements to the decaying public infrastructure.</p>
+				</div>
+				<fig class="flex-16-9">
+					<img src="../images/playlab_09.png" alt="Medium-High Income Resident Decision Tree">
+				</fig>
+			</div><br>
 			<h2 class="h2">Behaviors</h2>
-			<p>Agent behaviors are applied globally, but agent’s movements are defined locally to achieve autonomy. The three main behaviors represent the three stage of the agent simulation: “population generation”, “program interaction”, and “demographic change”. Agents are given a sight radius of which they will respond to the elements within their sight.</p><br>
-			<h2 class="h2">Visitor</h2>
-			<p>Visitors are transient. They are attracted to “temporal” public programs, such as bikeshares over the public library. Visitor agents are randomly assigned with “high-income” or “low-income” traits, and will adapt behavior similar to residents of the respective income-type.</p>
-			<img><br>
-			<h2 class="h2">Resident, Low Income</h2>
-			<p>As the City of Hudson continues to evolve, development brings unequal benefits, facilitating easier access to land and amenities for some, while compounding challenges for others. U.S. Census data shows that low-income residents who live in Hudson have limited access to a vehicle and other community amenities.</p>
-			<img><br>
-			<h2 class="h2">Resident, Medium to High Income</h2>
-			<p>Similar to the low-income population, residents who live in other areas of Hudson, also voiced a need for improved community infrastructure. Many of these residents, however, can also afford the lifestyle of enjoying boutique retail on Warren Street.</p>
-			<img>
+			<p>Agent behaviors are applied globally, but agents’ movements are defined locally to achieve autonomy. The three main behaviors represent the three stage of the agent simulation: population generation, program interaction, and demographic change. Agents are randomly generated into the simulation environment, and are given a sight radius of which they will respond to the elements within their sight. Once programs are deployed, agents within their radius respond based on weighted levels of attraction with program values for cost, necessity, and frequency. [See Weighted Program Matrix in the table below.] Agents are defined to be encouraged or discouraged to stay in the simulated environment based on the types of programs deployed, which translates to a shift in the global population of agent types.</p>
+			<fig>
+				<img class="img-single" src="../images/playlab_10.png" alt="Weighted Program Matrix">
+			</fig>
+			<fig>
+				<img class="img-single" src="../images/playlab_11.gif" alt="Agent-based Behavior">
+			</fig>
+			
 			<p>PlayLab.City aims to achieve greater participatory design and more informed conversation where stakeholders understand design constraints. The interface becomes both a learning tool for the user and helps designers receive more informed feedback.</p>
 
-			<hr> -->
+			<hr>
 			<p>For further information, refer to the <a class="h3 link" href="https://medium.com/data-mining-the-city/playlab-city-41bd3ac05793" target="_blank">Medium post</a> and the urban analytics projects for <a class="h3 link" href="https://medium.com/data-mining-the-city" target="_blank">Data Mining the City</a>, research led by Violet Whitney at Columbia University, Graduate School of Architecture, Planning and Preservation.</p>
 		</div><!-- close content -->
 	</body>

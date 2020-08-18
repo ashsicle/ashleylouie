@@ -48,6 +48,7 @@ nav, footer {
 	text-align: left;
 	position: absolute;
 	display: inline;
+	margin-bottom: 0px;
 	bottom: 0px;
 	right: 0px;
 	float: right;
@@ -91,6 +92,23 @@ nav, footer {
 	right: 0px;
 	float:right;
 }
+.h6 {
+	font-family: 'Libre Baskerville';
+	font-style: italic;
+	font-size: 1.375em;
+	font-weight: 400;
+	line-height: 1.375em;
+}
+.h7 {
+	font-family: 'Libre Baskerville';
+	font-style: normal;
+	font-size: 1.0em;
+	font-weight: 400;
+	line-height: 3.0em;
+}
+fig {
+	text-align: center;
+}
 hr {
 	background: #000;
 	border: 0px;
@@ -130,6 +148,9 @@ a:hover, .link:hover, nav span:hover {
 sup {
 	line-height: 0.6em;
 }
+.text-center {
+	text-align: center;
+}
 .text-right {
 	align-items: center;
 }
@@ -164,7 +185,7 @@ sup {
 	height: auto;
 	width: 100%;
 }
-.img-row {
+.flex-row {
 	position: relative;
 	display: -webkit-box;
 	display: -moz-box;
@@ -177,30 +198,34 @@ sup {
 	width: 100%;
 	align-items: center;
 }
-.img-row > div:not(:last-child) {
+.flex-row > div:not(:last-child), .flex-row > fig:not(:last-child) {
 	margin-right: 20px;
 }
-.img-row img {
+.flex-row img {
 	width: 100%;
 	height: auto;
 	vertical-align: middle;
+	margin-bottom: 10px;
 }
-.img-grid {
+.flex-row > div > p {
+	width: 100%;
+}
+.flex-grid {
 	position: relative;
 	overflow: hidden;
 	height: auto;
 	flex-wrap: wrap;
 	clear: both;
 }
-.img-grid img {
+.flex-grid img {
 	height: auto;
 }
-.img-grid > div {
+.flex-grid > div {
 	margin-right: 20px;
 	margin-bottom: 20px;
 	float: left;
 }
-.img-16-9 {
+.flex-16-9 {
 	-webkit-flex: 1.7778;
 	-webkit-box-flex: 1.7778;
 	-moz-flex: 1.7778;
@@ -208,7 +233,7 @@ sup {
 	-ms-flex: 1.7778;
 	flex: 1.7778;
 }
-.img-3-2 {
+.flex-3-2 {
 	-webkit-flex: 1.5;
 	-webkit-box-flex: 1.5;
 	-moz-flex: 1.5;
@@ -216,7 +241,7 @@ sup {
 	-ms-flex: 1.5;
 	flex: 1.5;
 }
-.img-4-3 {
+.flex-4-3 {
 	-webkit-flex: 1.3333;
 	-webkit-box-flex: 1.333;
 	-moz-flex: 1.3333;
@@ -224,7 +249,7 @@ sup {
 	-ms-flex: 1.3333;
 	flex: 1.3333;
 }
-.img-5-4 {
+.flex-5-4 {
 	-webkit-flex: 1.25;
 	-webkit-box-flex: 1.25;
 	-moz-flex: 1.25;
@@ -232,7 +257,7 @@ sup {
 	-ms-flex: 1.25;
 	flex: 1.25;
 }
-.img-1-1 {
+.flex-1-1 {
 	-webkit-flex: 1;
 	-webkit-box-flex: 1;
 	-moz-flex: 1;
@@ -240,7 +265,7 @@ sup {
 	-ms-flex: 1;
 	flex: 1;
 }
-.img-3-4 {
+.flex-3-4 {
 	-webkit-flex: 0.75;
 	-webkit-box-flex: 0.75;
 	-moz-flex: 0.75;
@@ -248,7 +273,7 @@ sup {
 	-ms-flex: 0.75;
 	flex: 0.75;
 }
-.img-5-7 {
+.flex-5-7 {
 	-webkit-flex: 0.7143;
 	-webkit-box-flex: 0.7143;
 	-moz-flex: 0.7143;
@@ -256,7 +281,7 @@ sup {
 	-ms-flex: 0.7143;
 	flex: 0.7143;
 }
-.img-2-3 {
+.flex-2-3 {
 	-webkit-flex: 0.6667;
 	-webkit-box-flex: 0.6667;
 	-moz-flex: 0.6667;
@@ -264,7 +289,7 @@ sup {
 	-ms-flex: 0.6667;
 	flex: 0.6667;
 }
-.img-9-16 {
+.flex-9-16 {
 	-webkit-flex: 0.5625;
 	-webkit-box-flex: 0.5625;
 	-moz-flex: 0.5625;
@@ -294,7 +319,7 @@ sup {
 }
 
 /*XXL screen*/
-@media screen and (min-width:1441px) {
+/*@media screen and (min-width:1441px) {
 	#outercontainer {
 		width: 1290px;
 	}
@@ -315,9 +340,9 @@ sup {
 		margin-left: 15%;
 		margin-right: 15%;
 	}
-}
+}*/
 /*XL screen*/
-@media screen and (min-width:1025px) and (max-width:1440px) {
+@media screen and (min-width:1025px) {
 	#outercontainer {
 		width: 960px;
 	}

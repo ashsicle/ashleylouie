@@ -65,13 +65,13 @@ var amplifyhudson = {
 var playlab = {
   projID: "playlab",
   imgSrc: "playlab_01_thumb.gif",
-  projTitle: "playLab.City",
+  projTitle: "playLab",
   projDescr: "collective interactive platform for participatory design",
   collab: "Richard Chou"
 };
 var conflictresolution = {
   projID: "conflictresolution",
-  imgSrc: "conflictresolution_01_thumb.png",
+  imgSrc: "conflictresolution_00_thumb.png",
   projTitle: "Conflict Resolution",
   projDescr: "community agency through mapping",
   location: "Puerto Rico",
