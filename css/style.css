@@ -198,9 +198,12 @@ nav ul li:hover ul {
 	vertical-align: middle;
 	margin-bottom: 10px;
 }
-.flex-row > div > p, .flex-row > div > ul {
+.flex-row > div > p {
 	width: 100%;
 }
+.flex-row > div > ul {
+ 	width: calc(100% - 40px);
+ }
 .flex-grid {
 	position: relative;
 	overflow: hidden;
