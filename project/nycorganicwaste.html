@@ -7,8 +7,8 @@
 	<script src="https://d3js.org/d3.v6.min.js"></script>
 	<script type="text/javascript" src="../js/script.js"></script>
 	<script type="module">
-		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
-		import define from "https://api.observablehq.com/@ashsicle/new-york-city-waste-flow.js?v=3";
+		import {Runtime, Inspector} from "../js/runtime.js";
+		import define from "../d3-sankey-nycwaste";
 		const inspect = Inspector.into("#d3-sankey-nycwaste");
 		(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
 	</script>
