@@ -7,9 +7,9 @@
 	<script src="https://d3js.org/d3.v6.min.js"></script>
 	<script type="text/javascript" src="../js/script.js"></script>
 	<script type="module">
-		import {Runtime, Inspector} from "../js/runtime.js";
-		import define from "../js/d3-sankey-nyc-waste.js";
-		const inspect = Inspector.into("#d3-sankey-nyc-waste");
+		import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@4/dist/runtime.js";
+		import define from "https://api.observablehq.com/@ashsicle/new-york-city-waste-flow.js?v=3";
+		const inspect = Inspector.into("#observablehq-480fffb1");
 		(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
 	</script>
 	<title>Ashley Louie</title>
@@ -32,7 +32,7 @@
 			New York City, NY<br>
 			<span class='h3'>Collaborators</span>&emsp;Donghanyu An, Alexandra Burkhardt, Xiaofei Sun, Dian Yu<br/><br/>
 			<p>Although the New York City Department of Sanitation lists the neighborhoods that receive curbside pick-up for organic waste, this collection service is only available to residents in single-family homes and buildings with less than 10 apartments. The reality is that many of these neighborhoods remain underserved with limited access to convenient drop-off locations.</p>
-			<div id="#d3-sankey-nyc-waste"></div>
+			<div id="#observablehq-480fffb1"></div>
 			<p>Further project information coming soon!</p>
 		</div><!-- close content -->
 		<footer>
