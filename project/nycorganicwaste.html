@@ -8,7 +8,7 @@
 	<script type="text/javascript" src="../js/script.js"></script>
 	<script type="module">
 		import {Runtime, Inspector} from "../js/runtime.js";
-		import define from "../d3-sankey-nycwaste";
+		import define from "../js/d3-sankey-nycwaste.js";
 		const inspect = Inspector.into("#d3-sankey-nycwaste");
 		(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
 	</script>
