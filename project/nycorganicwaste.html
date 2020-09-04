@@ -6,6 +6,12 @@
 	<script type="text/javascript" src="../js/jquery-3.5.1.min.js"></script>
 	<script src="https://d3js.org/d3.v6.min.js"></script>
 	<script type="text/javascript" src="../js/script.js"></script>
+	<script type="module">
+		import {Runtime, Inspector} from "../js/runtime.js";
+		import define from "../js/d3-sankey-nyc-waste.js";
+		const inspect = Inspector.into("#d3-sankey-nyc-waste");
+		(new Runtime).module(define, name => name === "chart" ? inspect() : undefined);
+	</script>
 	<title>Ashley Louie</title>
 </head>
 <body>
@@ -23,9 +29,10 @@
 			<h1 class="h5">NYC Organic Waste 2040</h1><br/>
 			supply a circular economy within a local network<br/><br/>
 			<img class="img-single" src="../images/nycorganicwaste_thumb.jpg">
-			New York City, NY<br/>
+			New York City, NY<br>
 			<span class='h3'>Collaborators</span>&emsp;Donghanyu An, Alexandra Burkhardt, Xiaofei Sun, Dian Yu<br/><br/>
 			<p>Although the New York City Department of Sanitation lists the neighborhoods that receive curbside pick-up for organic waste, this collection service is only available to residents in single-family homes and buildings with less than 10 apartments. The reality is that many of these neighborhoods remain underserved with limited access to convenient drop-off locations.</p>
+			<div id="#d3-sankey-nyc-waste"></div>
 			<p>Further project information coming soon!</p>
 		</div><!-- close content -->
 		<footer>
