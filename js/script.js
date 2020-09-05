@@ -1,7 +1,7 @@
 $(document).ready(function(){
 var nycorganicwaste = {
   projID: "nycorganicwaste",
-  imgSrc: "nycorganicwaste_thumb.jpg",
+  imgSrc: "nycorganicwaste_thumb.png",
   projTitle: "NYC Organic Waste 2040",
   projDescr: "supply a circular economy within a local network",
   location: "New York City, NY",
