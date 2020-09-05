@@ -350,10 +350,10 @@ nav ul li:hover ul {
 		max-width: 1290px;
 		max-height: 726px;
 	}
-	.img-grid {
+	.flex-grid {
 		width: 1310px;
 	}
-	.img-grid img {
+	.flex-grid img {
 		max-width: 307px;
 	}
 	p, ol, ul {
@@ -373,10 +373,10 @@ nav ul li:hover ul {
 		max-width: 960px;
 		max-height: 540px;
 	}
-	.img-grid {
+	.flex-grid {
 		width: 980px;
 	}
-	.img-grid img {
+	.flex-grid img {
 		max-width: 306px;
 	}
 	p, ol, ul {
@@ -396,10 +396,10 @@ nav ul li:hover ul {
 		max-width: 800px;
 		max-height: 450px;
 	}
-	.img-grid {
+	.flex-grid {
 		width: 820px;
 	}
-	.img-grid img {
+	.flex-grid img {
 		max-width: 390px;
 	}
 }
@@ -412,10 +412,10 @@ nav ul li:hover ul {
 		max-width: 600px;
 		max-height: 338px;
 	}
-	.img-grid {
+	.flex-grid {
 		width: 620px;
 	}
-	.img-grid img {
+	.flex-grid img {
 		max-width: 290px;
 	}
 }
@@ -428,10 +428,10 @@ nav ul li:hover ul {
 		max-width: 400px;
 		max-height: 225px;
 	}
-	.img-grid {
+	.flex-grid {
 		width: 420px;
 	}
-	.img-grid img {
+	.flex-grid img {
 		max-width: 190px;
 	}
 }
@@ -444,10 +444,10 @@ nav ul li:hover ul {
 		max-width: 480px;
 		max-height: 270px;
 	}
-	.img-grid {
+	.flex-grid {
 		width: 98%;
 	}
-	.img-grid img {
+	.flex-grid img {
 		max-width: 45%;
 	}
 }
